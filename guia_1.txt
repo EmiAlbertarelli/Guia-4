@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+
+        String frase;
+        System.out.println("ingrese una frace");
+        frase=sc.nextLine();
+        trans(frase);
+        
+    }
+    public static void trans(String frase){
+        frase= frase.replace("a", "@");
+        frase= frase.replace("e", "#");
+        frase= frase.replace("i", "$");
+        frase= frase.replace("o", "%");
+        frase= frase.replace("u", "*");
+        System.out.println("la frase modificada queda "+frase+".");
+    }
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        int x;
+        boolean pri;
+        System.out.println("ingrese el valor a verificar");
+        x=sc.nextInt();
+        pri=primos(x);
+        System.out.println("el numero es primo? "+pri);
+    }
+    
+    public static boolean primos(int x){
+        int c=0;
+        for (int i = 1; i <= x; i++) {
+            if(x%i==0){
+                c++;
+            }
+        }
+if(c==2){
+    return true;
+}else{
+    return false;
+}
+    }
+}

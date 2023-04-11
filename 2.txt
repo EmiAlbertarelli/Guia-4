@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+      int edad;
+      String validacion;
+      int c=1;
+      String nombre;
+      do {
+          System.out.println("cargue el nombre de la persona "+c);
+          nombre=sc.next();
+          System.out.println("cargue la edad de la persona "+c);
+          edad=sc.nextInt();
+          mayorEdad(nombre, edad);
+          System.out.println("desea cargar mas personas?  S/N");
+          validacion= sc.next();
+          c++;
+      }while(validacion.equalsIgnoreCase("s"));
+    }
+    public static void mayorEdad(String nombre, int edad){
+        if (edad>17){
+            System.out.println(nombre+" tiene "+edad+" es mayor de edad ");
+        }else {
+            System.out.println(nombre+" tiene "+edad+" no es mayor de edad ");
+        }
+    }
+}

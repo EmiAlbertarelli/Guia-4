@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+       int x1;
+       int x2;
+        System.out.print("cargue los 2 numeros: ");
+        x1=sc.nextInt();
+        x2=sc.nextInt();
+        multiplo(x1,x2);
+    }
+    public static void multiplo(int x1, int x2){
+        if(x1%x2==0){
+            System.out.println("el numero x1 es multiplo de x2 : ");
+        }else {
+            System.out.println("x1 no es multiplo de x2 ");
+        }
+    }
+
+}
